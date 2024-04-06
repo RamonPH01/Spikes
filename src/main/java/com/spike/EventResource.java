@@ -43,7 +43,7 @@ public class EventResource{
             Event event =objectMapper.readValue(jsonBody, Event.class);
             eventRepo.persist(event);
             return Response.status(Response.Status.CREATED).entity(event).build();
-
+//Test
         }
 
 }
